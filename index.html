@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sudoku</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Sudoku</h1>
+		<div class="boiteNiveau">
+			<label for="niveau">Niveau
+			</label>
+			<select name="niveau" id="niveau" onchange="niveau()">
+				<option value="80">facile</option>
+				<option value="100">moyen</option>
+				<option value="120">difficile</option>
+			</select>
+
+
+		</div>
+
+		<div class="plateau">
+			<div class="boite">
+				<div class="case" id="case1" onclick="recupIndex('case1')"></div>
+				<div class="case" id="case2" onclick="recupIndex('case2')"></div>
+				<div class="case" id="case3" onclick="recupIndex('case3')"></div>
+				<div class="case" id="case4" onclick="recupIndex('case4')"></div>
+				<div class="case" id="case5" onclick="recupIndex('case5')"></div>
+				<div class="case" id="case6" onclick="recupIndex('case6')"></div>
+				<div class="case" id="case7" onclick="recupIndex('case7')"></div>
+				<div class="case" id="case8" onclick="recupIndex('case8')"></div>
+				<div class="case" id="case9" onclick="recupIndex('case9')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case10" onclick="recupIndex('case10')"></div>
+				<div class="case" id="case11" onclick="recupIndex('case11')"></div>
+				<div class="case" id="case12" onclick="recupIndex('case12')"></div>
+				<div class="case" id="case13" onclick="recupIndex('case13')"></div>
+				<div class="case" id="case14" onclick="recupIndex('case14')"></div>
+				<div class="case" id="case15" onclick="recupIndex('case15')"></div>
+				<div class="case" id="case16" onclick="recupIndex('case16')"></div>
+				<div class="case" id="case17" onclick="recupIndex('case17')"></div>
+				<div class="case" id="case18" onclick="recupIndex('case18')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case19" onclick="recupIndex('case19')"></div>
+				<div class="case" id="case20" onclick="recupIndex('case20')"></div>
+				<div class="case" id="case21" onclick="recupIndex('case21')"></div>
+				<div class="case" id="case22" onclick="recupIndex('case22')"></div>
+				<div class="case" id="case23" onclick="recupIndex('case23')"></div>
+				<div class="case" id="case24" onclick="recupIndex('case24')"></div>
+				<div class="case" id="case25" onclick="recupIndex('case25')"></div>
+				<div class="case" id="case26" onclick="recupIndex('case26')"></div>
+				<div class="case" id="case27" onclick="recupIndex('case27')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case28" onclick="recupIndex('case28')"></div>
+				<div class="case" id="case29" onclick="recupIndex('case29')"></div>
+				<div class="case" id="case30" onclick="recupIndex('case30')"></div>
+				<div class="case" id="case31" onclick="recupIndex('case31')"></div>
+				<div class="case" id="case32" onclick="recupIndex('case32')"></div>
+				<div class="case" id="case33" onclick="recupIndex('case33')"></div>
+				<div class="case" id="case34" onclick="recupIndex('case34')"></div>
+				<div class="case" id="case35" onclick="recupIndex('case35')"></div>
+				<div class="case" id="case36" onclick="recupIndex('case36')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case37" onclick="recupIndex('case37')"></div>
+				<div class="case" id="case38" onclick="recupIndex('case38')"></div>
+				<div class="case" id="case39" onclick="recupIndex('case39')"></div>
+				<div class="case" id="case40" onclick="recupIndex('case40')"></div>
+				<div class="case" id="case41" onclick="recupIndex('case41')"></div>
+				<div class="case" id="case42" onclick="recupIndex('case42')"></div>
+				<div class="case" id="case43" onclick="recupIndex('case43')"></div>
+				<div class="case" id="case44" onclick="recupIndex('case44')"></div>
+				<div class="case" id="case45" onclick="recupIndex('case45')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case46" onclick="recupIndex('case46')"></div>
+				<div class="case" id="case47" onclick="recupIndex('case47')"></div>
+				<div class="case" id="case48" onclick="recupIndex('case48')"></div>
+				<div class="case" id="case49" onclick="recupIndex('case49')"></div>
+				<div class="case" id="case50" onclick="recupIndex('case50')"></div>
+				<div class="case" id="case51" onclick="recupIndex('case51')"></div>
+				<div class="case" id="case52" onclick="recupIndex('case52')"></div>
+				<div class="case" id="case53" onclick="recupIndex('case53')"></div>
+				<div class="case" id="case54" onclick="recupIndex('case54')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case55" onclick="recupIndex('case55')"></div>
+				<div class="case" id="case56" onclick="recupIndex('case56')"></div>
+				<div class="case" id="case57" onclick="recupIndex('case57')"></div>
+				<div class="case" id="case58" onclick="recupIndex('case58')"></div>
+				<div class="case" id="case59" onclick="recupIndex('case59')"></div>
+				<div class="case" id="case60" onclick="recupIndex('case60')"></div>
+				<div class="case" id="case61" onclick="recupIndex('case61')"></div>
+				<div class="case" id="case62" onclick="recupIndex('case62')"></div>
+				<div class="case" id="case63" onclick="recupIndex('case63')"></div>
+
+			</div>
+			<div class="boite">
+				<div class="case" id="case64" onclick="recupIndex('case64')"></div>
+				<div class="case" id="case65" onclick="recupIndex('case65')"></div>
+				<div class="case" id="case66" onclick="recupIndex('case66')"></div>
+				<div class="case" id="case67" onclick="recupIndex('case67')"></div>
+				<div class="case" id="case68" onclick="recupIndex('case68')"></div>
+				<div class="case" id="case69" onclick="recupIndex('case69')"></div>
+				<div class="case" id="case70" onclick="recupIndex('case70')"></div>
+				<div class="case" id="case71" onclick="recupIndex('case71')"></div>
+				<div class="case" id="case72" onclick="recupIndex('case72')"></div>
+			</div>
+			<div class="boite">
+				<div class="case" id="case73" onclick="recupIndex('case73')"></div>
+				<div class="case" id="case74" onclick="recupIndex('case74')"></div>
+				<div class="case" id="case75" onclick="recupIndex('case75')"></div>
+				<div class="case" id="case76" onclick="recupIndex('case76')"></div>
+				<div class="case" id="case77" onclick="recupIndex('case77')"></div>
+				<div class="case" id="case78" onclick="recupIndex('case78')"></div>
+				<div class="case" id="case79" onclick="recupIndex('case79')"></div>
+				<div class="case" id="case80" onclick="recupIndex('case80')"></div>
+				<div class="case" id="case81" onclick="recupIndex('case81')"></div>
+			</div>
+		</div>
+		<div class="boitebouton">
+			<button class="bouton" onclick="ecrire(1)">1</button>
+			<button class="bouton" onclick="ecrire(2)">2</button>
+			<button class="bouton" onclick="ecrire(3)">3</button>
+			<button class="bouton" onclick="ecrire(4)">4</button>
+			<button class="bouton" onclick="ecrire(5)">5</button>
+			<button class="bouton" onclick="ecrire(6)">6</button>
+			<button class="bouton" onclick="ecrire(7)">7</button>
+			<button class="bouton" onclick="ecrire(8)">8</button>
+			<button class="bouton" onclick="ecrire(9)">9</button>
+			<button class="bouton effacer" onclick="ecrire('')">Effacer</button>
+			<button class="commencer bouton" id="commencer" onclick="initialiser()">Commencer</button>
+
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

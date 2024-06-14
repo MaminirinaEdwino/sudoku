@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    @apply text-4xl text-center h-16 flex justify-center items-center
+}
+.plateau{
+    @apply grid grid-cols-3 w-fit m-auto h-auto border shadow-lg rounded-md
+}
+.boite{
+    @apply grid grid-cols-3 w-fit gap-1 border p-1 rounded-sm
+}
+.case{
+    @apply w-8 h-8 border border-blue-400 text-center select-none rounded-md flex justify-center items-center
+}
+.boitebouton{
+    @apply flex justify-center gap-1 p-3 w-fit m-auto border rounded-lg mt-5 shadow-lg
+}
+.bouton{
+    @apply w-8 h-8 border border-blue-400 rounded-md
+}
+
+.effacer,.commencer{
+    @apply w-auto pl-2 pr-2
+}
+.boiteNiveau{
+    @apply w-fit m-auto mt-3 mb-3 p-3 text-center flex flex-col justify-center items-center
+}
+select{
+    @apply mr-3  w-auto absolute z-10 text-center h-9 rounded-md bg-white border border-blue-400 pl-2
+}
+label:focus ~ #niveau, #niveau:hover {
+    @apply flex
+}
+label{
+    @apply border border-blue-400 p-1 rounded-md
+}
